@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <Heading>Home</Heading>
+        <Heading>Home Page</Heading>
       </Container>
     </>
   );
