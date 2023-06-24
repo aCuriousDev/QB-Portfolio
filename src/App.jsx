@@ -10,21 +10,27 @@ import Works from "./pages/Works";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "works",
-    element: <Works />,
+    element: <Main />,
+    children: [
+      {
+        errorElement: <ErrorPage />,
+        children: [
+          {
+            path: "home",
+            element: <Home />,
+          },
+          {
+            path: "works",
+            element: <Works />,
+          },
+        ],
+      },
+    ],
   },
 ]);
 
 function App() {
-  return (
-    <Main>
-      <RouterProvider router={router}></RouterProvider>
-    </Main>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

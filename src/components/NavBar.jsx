@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import {
   Container,
@@ -13,15 +12,17 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+  forwardRef,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeButton from "./theme-button";
+import Logo from "./Logo";
 
-const LinkItem = ({ children }) => {
+const LinkItem = ({ children, to }) => {
   //   const active = path === href;
-  const inactiveColor = useColorModeValue("gray.800", "whiteAlpha.900");
+  //   const inactiveColor = useColorModeValue("gray.800", "whiteAlpha.900");
   return (
-    <Link scroll={"false"} p={2} bg={"grassTeal"}>
+    <Link as={RouterLink} scroll={"false"} p={2} bg={"grassTeal"} to={to}>
       {children}
     </Link>
   );
@@ -52,9 +53,7 @@ const NavBar = (props) => {
         justify="space-between"
       >
         <Flex align="cetner" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing="tight">
-            Quentin Berger
-          </Heading>
+          <Logo />
         </Flex>
 
         <Stack
@@ -65,9 +64,9 @@ const NavBar = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem>Home</LinkItem>
-          <LinkItem>Works</LinkItem>
-          <LinkItem>Ressources</LinkItem>
+          <LinkItem to="home">Home</LinkItem>
+          <LinkItem to="works">Works</LinkItem>
+          <LinkItem to="home">Ressources</LinkItem>
         </Stack>
 
         <Box flex={1} align="right">

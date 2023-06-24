@@ -18,3 +18,5 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
     </Box>
   );
 };
+
+export default WorkGridItem;
