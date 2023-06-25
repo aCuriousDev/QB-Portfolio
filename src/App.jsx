@@ -10,6 +10,8 @@ import MainLayout from "./components/layout/MainLayout";
 import Home from "./pages/Home.jsx";
 import ErrorPage from "./pages/error-page.jsx";
 import Works from "./pages/Works";
+// import Work from "./components/Work";
+import { Pyralim, Natecia } from "./pages/works/worksIndex";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +21,19 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        // path: "home",
         element: <Home />,
       },
       {
         path: "works",
         element: <Works />,
+      },
+      {
+        path: "works/Pyralim",
+        element: <Pyralim />,
+      },
+      {
+        path: "works/Natecia",
+        element: <Natecia />,
       },
     ],
   },

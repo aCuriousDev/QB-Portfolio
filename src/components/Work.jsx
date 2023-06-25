@@ -1,5 +1,15 @@
-import { Box } from "@chakra-ui/react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  Container,
+} from "@chakra-ui/react";
 
-const Work = () => {
-  return <Box>Work</Box>;
+const Work = ({ children }) => {
+  return (
+    <>
+      <Container>{children}</Container>
+    </>
+  );
 };
+export default Work;
