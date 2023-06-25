@@ -3,7 +3,7 @@ import NavBar from "../NavBar";
 import Footer from "../Footer";
 import { Outlet } from "react-router-dom";
 
-const Main = () => {
+const MainLayout = () => {
   return (
     <Box pb={8}>
       <NavBar />
@@ -14,4 +14,4 @@ const Main = () => {
     </Box>
   );
 };
-export default Main;
+export default MainLayout;

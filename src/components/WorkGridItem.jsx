@@ -3,7 +3,7 @@ import { Box, Image, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
   return (
     <Box w="100%" textAlign="center">
-      <LinkBox scroll={false} cursor="pointer">
+      <LinkBox scroll="false" cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}

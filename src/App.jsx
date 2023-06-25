@@ -1,6 +1,10 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Main from "./components/layout/Main";
+import {
+  createBrowserRouter,
+  redirect,
+  RouterProvider,
+} from "react-router-dom";
+import MainLayout from "./components/layout/MainLayout";
 
 // Pages for routing
 import Home from "./pages/Home.jsx";
@@ -10,20 +14,17 @@ import Works from "./pages/Works";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        errorElement: <ErrorPage />,
-        children: [
-          {
-            path: "home",
-            element: <Home />,
-          },
-          {
-            path: "works",
-            element: <Works />,
-          },
-        ],
+        index: true,
+        // path: "home",
+        element: <Home />,
+      },
+      {
+        path: "works",
+        element: <Works />,
       },
     ],
   },

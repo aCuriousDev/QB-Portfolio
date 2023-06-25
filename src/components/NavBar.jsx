@@ -1,4 +1,4 @@
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink, useMatch } from "react-router-dom";
 import {
   Container,
   Box,
@@ -18,18 +18,33 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeButton from "./theme-button";
 import Logo from "./Logo";
 
-const LinkItem = ({ children, to }) => {
-  //   const active = path === href;
-  //   const inactiveColor = useColorModeValue("gray.800", "whiteAlpha.900");
+const LinkItem = ({ children, to, ...props }) => {
+  const inactiveColor = useColorModeValue("gray.800", "whiteAlpha.900");
+
   return (
-    <Link as={RouterLink} scroll={"false"} p={2} bg={"grassTeal"} to={to}>
+    <Link
+      as={NavLink}
+      scroll="false"
+      p={2}
+      color={inactiveColor}
+      rounded="md"
+      _hover={{
+        background: useColorModeValue("gray.50", "whiteAlpha.300"),
+      }}
+      _activeLink={{
+        color: "blue.900",
+        background: useColorModeValue("cyan.50", "cyan.100"),
+      }}
+      to={to}
+      {...props}
+    >
       {children}
     </Link>
   );
 };
 
 const MenuLink = forwardRef((props, ref) => (
-  <Link ref={ref} as={RouterLink} {...props} />
+  <Link ref={ref} as={RouterNavLink} {...props} />
 ));
 
 const NavBar = (props) => {
@@ -43,6 +58,7 @@ const NavBar = (props) => {
       bg={useColorModeValue("#ffffff40", "#20202380")}
       css={{ backdropFilter: "blur(10px)" }}
       zIndex={2}
+      {...props}
     >
       <Container
         display="flex"
@@ -52,7 +68,7 @@ const NavBar = (props) => {
         align="center"
         justify="space-between"
       >
-        <Flex align="cetner" mr={5}>
+        <Flex align="center" mr={5}>
           <Logo />
         </Flex>
 
@@ -64,9 +80,11 @@ const NavBar = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem to="home">Home</LinkItem>
+          <LinkItem to="/" end>
+            Home
+          </LinkItem>
           <LinkItem to="works">Works</LinkItem>
-          <LinkItem to="home">Ressources</LinkItem>
+          <LinkItem to="ressources">Ressources</LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
