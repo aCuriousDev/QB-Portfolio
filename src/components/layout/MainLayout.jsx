@@ -1,4 +1,4 @@
-import { forwardRef, Box, Container } from "@chakra-ui/react";
+import { Box, Container, Image } from "@chakra-ui/react";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 import { Outlet } from "react-router-dom";
@@ -8,7 +8,8 @@ const MainLayout = () => {
   return (
     <Box pb={8}>
       <NavBar />
-      <Container maxW="container.sm" pt={14}>
+      <Container maxW="container.sm" pt={20}>
+        <Image src="https://place-hold.it/800x300?text=Something Here" mb={2}/>
         <CustomBreadCrumbs />
         <Outlet />
       </Container>

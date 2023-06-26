@@ -1,9 +1,4 @@
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Container,
-} from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 
 const Work = ({ children }) => {
   return (

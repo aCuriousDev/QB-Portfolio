@@ -1,10 +1,9 @@
-import { NavLink, useMatch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Container,
   Box,
   Link,
   Stack,
-  Heading,
   Flex,
   Menu,
   MenuItem,
@@ -33,7 +32,7 @@ const LinkItem = ({ children, to, ...props }) => {
       }}
       _activeLink={{
         color: "blue.900",
-        background: useColorModeValue("cyan.50", "cyan.100"),
+        background: useColorModeValue("blue.100", "blue.200"),
       }}
       to={to}
       {...props}

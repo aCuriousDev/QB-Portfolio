@@ -1,5 +1,5 @@
 import { Avatar, Heading, LinkBox, LinkOverlay, Stack } from "@chakra-ui/react";
-import { FaCode } from "react-icons/fa";
+import { PiBracketsCurlyBold } from "react-icons/pi";
 import { Link as RouterLink } from "react-router-dom";
 
 const Logo = () => {
@@ -7,7 +7,11 @@ const Logo = () => {
     <LinkBox>
       <LinkOverlay as={RouterLink} to="/">
         <Stack direction="row" align="end">
-          <Avatar size="sm" bg="blue.700" icon={<FaCode fontSize="1.1rem" />} />
+          <Avatar
+            size="sm"
+            bg="blue.700"
+            icon={<PiBracketsCurlyBold fontSize="1.3rem" />}
+          />
           <Heading as="h1" size="lg" letterSpacing="tight" ml={3}>
             Quentin Berger
           </Heading>
