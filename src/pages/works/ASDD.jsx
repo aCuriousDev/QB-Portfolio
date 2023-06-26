@@ -1,7 +1,7 @@
 import Work from "../../components/Work";
 
-const ASDD = () => {
+const Asdd = () => {
   return <Work>ASDD</Work>;
 };
 
-export default ASDD;
+export default Asdd;
