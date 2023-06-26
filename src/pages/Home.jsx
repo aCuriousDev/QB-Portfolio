@@ -137,7 +137,7 @@ export default function Home() {
                 <Stat>
                   <StatLabel>Supports Produits</StatLabel>
                   <StatNumber color="green.400">20+</StatNumber>
-                  <StatHelpText>100 et + itérations</StatHelpText>
+                  <StatHelpText>et 100 + itérations</StatHelpText>
                 </Stat>
                 <Stat>
                   <StatLabel>Durée du projet</StatLabel>
