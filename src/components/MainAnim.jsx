@@ -1,13 +1,13 @@
 import Lottie from "lottie-react";
-import groovyWalkAnimation from "../assets/lottie/groovyWalk.json";
+// import groovyWalkAnimation from "../assets/lottie/groovyWalk.json";
 import workingAnimation from "../assets/lottie/working.json";
-import { AspectRatio } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+
+const style = {
+  height: 300,
+};
 
 const MainAnim = () => {
-  return (
-    <AspectRatio maxH={"380px"}>
-      <Lottie animationData={workingAnimation} />
-    </AspectRatio>
-  );
+  return <Lottie style={style} animationData={workingAnimation} />;
 };
 export default MainAnim;

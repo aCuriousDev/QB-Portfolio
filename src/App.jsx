@@ -8,6 +8,7 @@ import ErrorPage from "./pages/error-page.jsx";
 import Works from "./pages/Works";
 // import Work from "./components/Work";
 import { Pyralim, Natecia } from "./pages/works/worksIndex";
+import { AnimatePresence } from "framer-motion";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <AnimatePresence mode="wait" initial={true}>
+      <RouterProvider router={router} />
+    </AnimatePresence>
+  );
 }
 
 export default App;

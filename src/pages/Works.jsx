@@ -3,10 +3,11 @@ import { WorkGridItem } from "../components/WorkGridItem";
 
 // img thumb import
 import thumbPyralim from "/images/works/logo_pyralim.png";
+import Layout from "../components/layout/Article";
 
 export default function Works() {
   return (
-    <>
+    <Layout>
       <SimpleGrid minChildWidth="120px" spacing="40px">
         <WorkGridItem id="Pyralim" title="Pyralim" thumbnail={thumbPyralim}>
           Un appli de bilan alimentaire simple et accessible pour reprendre la
@@ -17,6 +18,6 @@ export default function Works() {
           main sur son alimentation
         </WorkGridItem>
       </SimpleGrid>
-    </>
+    </Layout>
   );
 }
