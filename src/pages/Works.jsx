@@ -17,6 +17,14 @@ export default function Works() {
           Un appli de bilan alimentaire simple et accessible pour reprendre la
           main sur son alimentation
         </WorkGridItem>
+        <WorkGridItem
+          id="KMGFrance"
+          title="KMG France"
+          thumbnail={thumbPyralim}
+        >
+          Un appli de bilan alimentaire simple et accessible pour reprendre la
+          main sur son alimentation
+        </WorkGridItem>
       </SimpleGrid>
     </Layout>
   );

@@ -1,5 +1,7 @@
+import Work from "../../components/Work";
+
 const Pyralim = () => {
-  return <div>Pyralim Page</div>;
+  return <Work>Pyralim Page</Work>;
 };
 
 export default Pyralim;

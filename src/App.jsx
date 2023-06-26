@@ -7,7 +7,7 @@ import Home from "./pages/Home.jsx";
 import ErrorPage from "./pages/error-page.jsx";
 import Works from "./pages/Works";
 // import Work from "./components/Work";
-import { Pyralim, Natecia } from "./pages/works/worksIndex";
+import { Pyralim, Natecia, KMGFrance, ASDD } from "./pages/works/worksIndex";
 import { AnimatePresence } from "framer-motion";
 
 const router = createBrowserRouter([
@@ -31,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: "works/Natecia",
         element: <Natecia />,
+      },
+      {
+        path: "works/KMGFrance",
+        element: <KMGFrance />,
+      },
+      {
+        path: "works/ASDD",
+        element: <ASDD />,
       },
     ],
   },

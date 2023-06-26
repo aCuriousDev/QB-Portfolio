@@ -15,6 +15,8 @@ import {
   StatArrow,
   StatGroup,
   Icon,
+  VStack,
+  Stack,
 } from "@chakra-ui/react";
 import { PiBracketsCurlyBold } from "react-icons/pi";
 import { VscArrowRight, VscCheck } from "react-icons/vsc";
@@ -40,6 +42,7 @@ export default function Home() {
           Hello, je suis un{" "}
           <Tooltip
             label="in progress..."
+            color="#fff"
             bg="green.600"
             placement="top"
             hasArrow
@@ -93,10 +96,10 @@ export default function Home() {
             opportunité pour apprendre et developper de nouvelles compétences.
             <br />
             Lorsque je ne suis pas derrière un écran je partage avec
-            enthousiasme mon engouement pour le sport au sein de mon
-            association.
+            enthousiasme mon engouement pour le sport au sein de
+            l&apos;association que je dirige.
           </Text>
-          <Center>
+          <Center mt={6}>
             <Button
               as={NavLink}
               to={"works"}
@@ -112,36 +115,116 @@ export default function Home() {
           <Heading as="h3" variant="section-title">
             Impact
           </Heading>
-          <Impact title={"Natecia : Label IHAB"} work={"Natecia"}>
-            <StatGroup>
-              <Stat>
-                <StatLabel>Livrets d&apos;Accueil Distribués / An</StatLabel>
-                <StatNumber color="green.400">3300+</StatNumber>
-                <StatHelpText>mamans aidées</StatHelpText>
-              </Stat>
-              <Stat>
-                <StatLabel>Obtention du Label</StatLabel>
-                <StatNumber>
-                  <Icon as={ImCheckmark} boxSize={30} color="green.400" />
-                </StatNumber>
-                <StatHelpText>
-                  validé par l&apos;OMS et l&apos;UNICEF
-                </StatHelpText>
-              </Stat>
-            </StatGroup>
-            <StatGroup>
-              <Stat>
-                <StatLabel>Supports Produits</StatLabel>
-                <StatNumber color="green.400">20+</StatNumber>
-                <StatHelpText></StatHelpText>
-              </Stat>
-              <Stat>
-                <StatLabel>Durée du projet</StatLabel>
-                <StatNumber color="green.400">4 ans</StatNumber>
-                <StatHelpText>2019-2023</StatHelpText>
-              </Stat>
-            </StatGroup>
-          </Impact>
+          <Stack>
+            <Impact title={"Natecia : Label IHAB"} work={"Natecia"}>
+              <StatGroup>
+                <Stat>
+                  <StatLabel>Livrets d&apos;Accueil Distribués / An</StatLabel>
+                  <StatNumber color="green.400">3300+</StatNumber>
+                  <StatHelpText>mamans aidées</StatHelpText>
+                </Stat>
+                <Stat>
+                  <StatLabel>Obtention du Label</StatLabel>
+                  <StatNumber>
+                    <Icon as={ImCheckmark} boxSize={30} color="green.400" />
+                  </StatNumber>
+                  <StatHelpText>
+                    validé par l&apos;OMS et l&apos;UNICEF
+                  </StatHelpText>
+                </Stat>
+              </StatGroup>
+              <StatGroup>
+                <Stat>
+                  <StatLabel>Supports Produits</StatLabel>
+                  <StatNumber color="green.400">20+</StatNumber>
+                  <StatHelpText>100 et + itérations</StatHelpText>
+                </Stat>
+                <Stat>
+                  <StatLabel>Durée du projet</StatLabel>
+                  <StatNumber color="green.400">4 ans</StatNumber>
+                  <StatHelpText>de collaboration</StatHelpText>
+                </Stat>
+              </StatGroup>
+            </Impact>
+            <Impact title={"KMG France : YouTube"} work={"KMGFrance"}>
+              <StatGroup>
+                <Stat>
+                  <StatLabel>Vues réalisées</StatLabel>
+                  <StatNumber color="green.400">4M+</StatNumber>
+                  <StatHelpText>220 000 heures visionnées</StatHelpText>
+                </Stat>
+                <Stat>
+                  <StatLabel>Augmentation des abonnées</StatLabel>
+
+                  <StatNumber color="green.400">+600%</StatNumber>
+
+                  <StatHelpText>
+                    <StatArrow type="increase" />
+                    10k à 70k
+                  </StatHelpText>
+                </Stat>
+              </StatGroup>
+              <StatGroup>
+                <Stat>
+                  <StatLabel>Vidéos Produites</StatLabel>
+                  <StatNumber color="green.400">200+</StatNumber>
+                  <StatHelpText>du tournage à l&apos;upload </StatHelpText>
+                </Stat>
+                <Stat>
+                  <StatLabel>Projets connexes</StatLabel>
+                  <StatNumber color="green.400">100+</StatNumber>
+                  <StatHelpText>défis relevés</StatHelpText>
+                </Stat>
+              </StatGroup>
+            </Impact>
+            <Impact title={"ASDD : Direction d'une Association"} work={"ASDD"}>
+              <StatGroup>
+                <Stat>
+                  <StatLabel>Nombre d&apos;inscrits</StatLabel>
+                  <StatNumber color="green.400">200</StatNumber>
+                  <StatHelpText>
+                    <StatArrow type="increase" />
+                    +80% vs pre-Covid
+                  </StatHelpText>
+                </Stat>
+                <Stat>
+                  <StatLabel>Augmentation des recettes</StatLabel>
+
+                  <StatNumber color="green.400">+125%</StatNumber>
+
+                  <StatHelpText>
+                    <StatArrow type="increase" />
+                    20k à 45k €
+                  </StatHelpText>
+                </Stat>
+              </StatGroup>
+              <StatGroup>
+                <Stat>
+                  <StatLabel>Transition Numérique</StatLabel>
+                  <StatNumber>
+                    <Icon as={ImCheckmark} boxSize={30} color="green.400" />
+                  </StatNumber>
+                  <StatHelpText>100% en ligne</StatHelpText>
+                </Stat>
+                <Stat>
+                  <StatLabel>Taille de l&apos;&Eacute;quipe</StatLabel>
+                  <StatNumber color="green.400">+3</StatNumber>
+                  <StatHelpText>depuis 2021</StatHelpText>
+                </Stat>
+              </StatGroup>
+            </Impact>
+          </Stack>
+          <Center mt={6}>
+            <Button
+              as={NavLink}
+              to={"works"}
+              colorScheme="blue"
+              rightIcon={<VscArrowRight fontSize={"1.1rem"} />}
+              scroll={"false"}
+            >
+              Mon portfolio
+            </Button>
+          </Center>
         </Section>
       </Container>
     </Layout>
