@@ -8,13 +8,22 @@ import {
   Text,
   Button,
   Center,
+  Stat,
+  StatLabel,
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+  StatGroup,
+  Icon,
 } from "@chakra-ui/react";
 import { PiBracketsCurlyBold } from "react-icons/pi";
-import { VscArrowRight } from "react-icons/vsc";
+import { VscArrowRight, VscCheck } from "react-icons/vsc";
+import { ImCheckmark } from "react-icons/im";
 import profileSrc from "../assets/img/quentin_profile.jpg";
 import Section from "../components/Section";
 import { NavLink } from "react-router-dom";
 import Layout from "../components/layout/Article";
+import Impact from "../components/Impact";
 
 export default function Home() {
   return (
@@ -99,10 +108,40 @@ export default function Home() {
             </Button>
           </Center>
         </Section>
-        <Section delay={0.5}>
+        <Section delay={0.6}>
           <Heading as="h3" variant="section-title">
             Impact
           </Heading>
+          <Impact title={"Natecia : Label IHAB"} work={"Natecia"}>
+            <StatGroup>
+              <Stat>
+                <StatLabel>Livrets d&apos;Accueil Distribués / An</StatLabel>
+                <StatNumber color="green.400">3300+</StatNumber>
+                <StatHelpText>mamans aidées</StatHelpText>
+              </Stat>
+              <Stat>
+                <StatLabel>Obtention du Label</StatLabel>
+                <StatNumber>
+                  <Icon as={ImCheckmark} boxSize={30} color="green.400" />
+                </StatNumber>
+                <StatHelpText>
+                  validé par l&apos;OMS et l&apos;UNICEF
+                </StatHelpText>
+              </Stat>
+            </StatGroup>
+            <StatGroup>
+              <Stat>
+                <StatLabel>Supports Produits</StatLabel>
+                <StatNumber color="green.400">20+</StatNumber>
+                <StatHelpText></StatHelpText>
+              </Stat>
+              <Stat>
+                <StatLabel>Durée du projet</StatLabel>
+                <StatNumber color="green.400">4 ans</StatNumber>
+                <StatHelpText>2019-2023</StatHelpText>
+              </Stat>
+            </StatGroup>
+          </Impact>
         </Section>
       </Container>
     </Layout>
