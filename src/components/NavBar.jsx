@@ -42,8 +42,19 @@ const LinkItem = ({ children, to, ...props }) => {
   );
 };
 
-const MenuLink = forwardRef((props, ref) => (
-  <Link ref={ref} as={RouterNavLink} {...props} />
+const MenuLink = forwardRef((props, to) => (
+  <Link
+    to={to}
+    as={NavLink}
+    {...props}
+    _hover={{
+      background: useColorModeValue("gray.50", "whiteAlpha.300"),
+    }}
+    _activeLink={{
+      color: "blue.900",
+      background: useColorModeValue("blue.100", "blue.200"),
+    }}
+  />
 ));
 
 const NavBar = (props) => {
@@ -97,9 +108,15 @@ const NavBar = (props) => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem>Home</MenuItem>
-                <MenuItem>Works</MenuItem>
-                <MenuItem>Ressources</MenuItem>
+                <MenuItem as={MenuLink} to="/">
+                  Home
+                </MenuItem>
+                <MenuItem as={MenuLink} to="works">
+                  Works
+                </MenuItem>
+                <MenuItem as={MenuLink} to="ressources">
+                  Ressources
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
