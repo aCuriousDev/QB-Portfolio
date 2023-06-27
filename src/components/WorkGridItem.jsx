@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
   return (
     <Box w="100%" textAlign="center">
-      <LinkBox scroll="false" cursor="pointer">
+      <LinkBox as={NavLink} to={`/works/${id}`} cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
@@ -16,7 +16,9 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
             {title}
           </Text>
         </LinkOverlay>
-        <Text>{children}</Text>
+        <Text p={.2} fontSize={14} lineHeight={1.1} >
+          {children}
+        </Text>
       </LinkBox>
     </Box>
   );

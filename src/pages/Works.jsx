@@ -2,13 +2,13 @@ import { SimpleGrid } from "@chakra-ui/react";
 import { WorkGridItem } from "../components/WorkGridItem";
 
 // img thumb import
-import thumbPyralim from "/images/works/logo_pyralim.png";
+import  thumbPyralim from "/images/works/logo_pyralim.png";
 import Layout from "../components/layout/Article";
 
 export default function Works() {
   return (
     <Layout>
-      <SimpleGrid minChildWidth="120px" spacing="40px">
+      <SimpleGrid minChildWidth="120px" columns={[1, 1, 2]} gap={6}>
         <WorkGridItem id="Pyralim" title="Pyralim" thumbnail={thumbPyralim}>
           Un appli de bilan alimentaire simple et accessible pour reprendre la
           main sur son alimentation
