@@ -32,14 +32,13 @@ export default function Works() {
         </Section>
         <Section delay={0.4}>
           <WorkGridItem id="KMGFrance" title="KMG France" thumbnail={thumbKMG}>
-          Collaboration étroite sur le developpement d&apos;une chaîne YouTube
+            Collaboration étroite sur le developpement d&apos;une chaîne YouTube
             et de son écosystème
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
           <WorkGridItem id="ASDD" title="ASDD" thumbnail={thumbASDD}>
-            Collaboration étroite sur le developpement d&apos;une chaîne YouTube
-            et de son écosystème
+            Direction d&apos;une association sportive dynamique et prospère
           </WorkGridItem>
         </Section>
       </SimpleGrid>

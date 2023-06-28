@@ -18,7 +18,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
             {title}
           </Text>
         </LinkOverlay>
-        <Text p={0.2} fontSize={14} lineHeight={1.15}>
+        <Text fontSize={14} mt={1}>
           {children}
         </Text>
       </LinkBox>

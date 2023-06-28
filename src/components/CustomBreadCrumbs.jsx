@@ -24,7 +24,7 @@ const CustomBreadCrumbs = () => {
           letterSpacing={"tight"}
           as={isCurrentProp ? "h2" : undefined}
           _hover={{ textDecoration: "underline" }}
-          sx={isCurrentProp && { "pointer-events": "none" }}
+          sx={isCurrentProp && { "pointerEvents": "none" }}
         >
           <BreadcrumbLink as={NavLink} to={currentLink}>
             {crumb}
