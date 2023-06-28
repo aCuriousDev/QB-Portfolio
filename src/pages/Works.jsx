@@ -4,9 +4,11 @@ import { WorkGridItem } from "../components/WorkGridItem";
 import Layout from "../components/layout/Article";
 import Section from "../components/Section";
 // img thumb import
+
 import thumbPyralim from "/images/works/thumb_pyralim.jpg";
 import thumbNatecia from "/images/works/natecia_copil-IHAB_thumb.jpg";
 import thumbKMG from "/images/works/thumb_KMG.jpg";
+import thumbASDD from "/images/works/thumb_ASDD.jpg";
 
 export default function Works() {
   return (
@@ -35,7 +37,7 @@ export default function Works() {
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="ASDD" title="ASDD" thumbnail={thumbPyralim}>
+          <WorkGridItem id="ASDD" title="ASDD" thumbnail={thumbASDD}>
             Collaboration étroite sur le developpement d&apos;une chaîne YouTube
             et de son écosystème
           </WorkGridItem>
