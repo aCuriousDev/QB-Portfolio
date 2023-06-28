@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
   return (
     <Box w="100%" textAlign="center">
-      <LinkBox as={NavLink} to={`/works/${id}`} cursor="pointer">
+      <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
