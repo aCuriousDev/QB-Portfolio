@@ -22,7 +22,7 @@ const CustomBreadCrumbs = () => {
           fontSize={isCurrentProp ? "3xl" : "md"}
           fontWeight={isCurrentProp ? "black" : "normal"}
           letterSpacing={"tight"}
-          as={isCurrentProp ? "h2" : "BredcrumbItem"}
+          as={isCurrentProp ? "h2" : undefined}
           _hover={{ textDecoration: "underline" }}
           sx={isCurrentProp && { "pointer-events": "none" }}
         >

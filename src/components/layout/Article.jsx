@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import CustomBreadCrumbs from "../CustomBreadCrumbs";
+import { Container } from "@chakra-ui/react";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 40 },
@@ -9,19 +10,19 @@ const variants = {
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <Container>
       <CustomBreadCrumbs />
       <motion.article
         initial="hidden"
         animate="enter"
         exit="exit"
         variants={variants}
-        transition={{ duration: 0.6, type: "easeInOut" }}
+        transition={{ duration: 0.8, type: "spring" }}
         style={{ position: "relative" }}
       >
         {children}
       </motion.article>
-    </>
+    </Container>
   );
 };
 

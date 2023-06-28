@@ -10,13 +10,15 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
           alt={title}
           className="grid-item-thumbnail"
           placeholder="blur"
+          borderRadius={12}
+          boxShadow="sm"
         />
         <LinkOverlay as={NavLink} to={`/works/${id}`}>
           <Text className="grid-item-title" mt={2} fontSize={20}>
             {title}
           </Text>
         </LinkOverlay>
-        <Text p={.2} fontSize={14} lineHeight={1.1} >
+        <Text p={0.2} fontSize={14} lineHeight={1.15}>
           {children}
         </Text>
       </LinkBox>

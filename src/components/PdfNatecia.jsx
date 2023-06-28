@@ -22,43 +22,45 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString();
 
-const pdfNatecia = () => {
+const PdfNatecia = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  const pdfHeight = 400;
-  const pdfWidth = pdfHeight / 1.4142;
+  const pdfWidth = 300;
+  const pdfHeight = (pdfWidth * 1.4142) / 2;
   const pagesShown = 2;
 
   function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages + 1);
+    setNumPages(numPages);
   }
 
   return (
     <Box>
-      <Document file={livret} onLoadSuccess={onDocumentLoadSuccess}>
-        <Center>
-          <Stack
-            direction={"row"}
-            height={pdfHeight / 2}
-            width={pdfWidth}
-            spacing={0}
-          >
-            <Page
-              pageNumber={pageNumber}
-              canvasBackground="white"
-              renderTextLayer={false}
-              height={pdfHeight / 2}
-            />
-            <Page
-              height={pdfHeight / 2}
-              pageNumber={pageNumber + 1}
-              canvasBackground="white"
-              renderTextLayer={false}
-            />
-          </Stack>
-        </Center>
-      </Document>
+      <Center>
+        <Box height={pdfHeight} width={pdfWidth} bg={"blue.300"}>
+          <Document file={livret} onLoadSuccess={onDocumentLoadSuccess}>
+            <Stack
+              direction={"row"}
+              height={pdfHeight}
+              width={pdfWidth}
+              spacing={0}
+            >
+              <Page
+                pageNumber={pageNumber}
+                canvasBackground="white"
+                renderTextLayer={false}
+                width={pdfWidth / pagesShown}
+              />
+              <Page
+                width={pdfWidth / pagesShown}
+                pageNumber={pageNumber + 1}
+                canvasBackground="white"
+                renderTextLayer={false}
+              />
+            </Stack>
+          </Document>
+        </Box>
+      </Center>
       <Flex align={"center"} justify={"center"} gap={4}>
         {pageNumber > 1 && (
           <Icon
@@ -68,7 +70,7 @@ const pdfNatecia = () => {
           />
         )}
 
-        <Text>
+        <Text sx={{ cursor: "default" }}>
           {pageNumber}-{pageNumber + 1} / {numPages}
         </Text>
 
@@ -84,4 +86,4 @@ const pdfNatecia = () => {
   );
 };
 
-export default pdfNatecia;
+export default PdfNatecia;

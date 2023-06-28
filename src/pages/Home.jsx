@@ -56,7 +56,7 @@ export default function Home() {
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2">Quentin Berger</Heading>
-            <p>Digital Qurious ( Creator / Developer / Designer )</p>
+            <Text p={0} m={0} fontSize={"sm"}>Digital Qurious ( Creator / Developer / Designer )</Text>
           </Box>
           <Box
             flexShrink={0}
