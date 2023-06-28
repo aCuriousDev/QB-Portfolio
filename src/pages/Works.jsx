@@ -1,11 +1,12 @@
 import { Container, SimpleGrid } from "@chakra-ui/react";
 import { WorkGridItem } from "../components/WorkGridItem";
 
+import Layout from "../components/layout/Article";
+import Section from "../components/Section";
 // img thumb import
 import thumbPyralim from "/images/works/thumb_pyralim.jpg";
 import thumbNatecia from "/images/works/natecia_copil-IHAB_thumb.jpg";
-import Layout from "../components/layout/Article";
-import Section from "../components/Section";
+import thumbKMG from "/images/works/thumb_KMG.jpg";
 
 export default function Works() {
   return (
@@ -28,17 +29,15 @@ export default function Works() {
           </WorkGridItem>
         </Section>
         <Section delay={0.4}>
-          <WorkGridItem
-            id="KMGFrance"
-            title="KMG France"
-            thumbnail={thumbPyralim}
-          >
-            Collaboration étroite sur une chaîne YouTube et son écosystème
+          <WorkGridItem id="KMGFrance" title="KMG France" thumbnail={thumbKMG}>
+          Collaboration étroite sur le developpement d&apos;une chaîne YouTube
+            et de son écosystème
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
           <WorkGridItem id="ASDD" title="ASDD" thumbnail={thumbPyralim}>
-            Collaboration étroite sur une chaîne YouTube et son écosystème
+            Collaboration étroite sur le developpement d&apos;une chaîne YouTube
+            et de son écosystème
           </WorkGridItem>
         </Section>
       </SimpleGrid>

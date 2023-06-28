@@ -37,8 +37,16 @@ const PdfNatecia = () => {
   return (
     <Box>
       <Center>
-        <Box height={pdfHeight} width={pdfWidth} bg={"blue.300"}>
-          <Document file={livret} onLoadSuccess={onDocumentLoadSuccess}>
+        <Box height={pdfHeight} width={pdfWidth} bg={"white"}>
+          <Document
+            file={livret}
+            onLoadSuccess={onDocumentLoadSuccess}
+            loading={
+              <Center textAlign={"center"} color={"black"}>
+                PDF is loading ... <br /> Please Wait !
+              </Center>
+            }
+          >
             <Stack
               direction={"row"}
               height={pdfHeight}
@@ -50,12 +58,22 @@ const PdfNatecia = () => {
                 canvasBackground="white"
                 renderTextLayer={false}
                 width={pdfWidth / pagesShown}
+                loading={
+                  <Center textAlign={"center"} color={"black"}>
+                    Page is loading ... <br /> Please Wait !
+                  </Center>
+                }
               />
               <Page
                 width={pdfWidth / pagesShown}
                 pageNumber={pageNumber + 1}
                 canvasBackground="white"
                 renderTextLayer={false}
+                loading={
+                  <Center textAlign={"center"} color={"black"}>
+                    Page is loading ... <br /> Please Wait !
+                  </Center>
+                }
               />
             </Stack>
           </Document>
