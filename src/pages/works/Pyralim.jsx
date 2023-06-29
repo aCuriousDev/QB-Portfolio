@@ -73,7 +73,7 @@ const Pyralim = () => {
       </List>
       <Section delay={0.6}>
         <Heading as="h3" variant="section-title">
-          Retrospective
+          Perspective
         </Heading>
         <List spacing={4}>
           <ListItem>
