@@ -21,7 +21,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { WorkImage, Meta } from "../../components/Custom";
-import { ExternalLinkIcon, StarIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Section from "../../components/Section";
 import { ImCheckmark } from "react-icons/im";
 import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
@@ -228,9 +228,9 @@ const Natecia = () => {
           <TabList mb="1em">
             <Tab>v0</Tab>
             <Tab>v1</Tab>
-            <Tab>v2</Tab>
+
             <Tab>v5</Tab>
-            <Tab>Schéma Fourni</Tab>
+            <Tab>Schéma</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
@@ -245,12 +245,7 @@ const Natecia = () => {
                 alt="Natecia-Schéma v"
               />
             </TabPanel>
-            <TabPanel>
-              <WorkImage
-                src="/images/works/Natecia-rythme_03.png"
-                alt="Natecia-Schéma v2"
-              />
-            </TabPanel>
+
             <TabPanel>
               <WorkImage
                 src="/images/works/Natecia-rythme_04.jpg"

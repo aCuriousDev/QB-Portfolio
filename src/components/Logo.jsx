@@ -12,7 +12,7 @@ const Logo = () => {
             bg="blue.700"
             icon={<PiBracketsCurlyBold fontSize="1.3rem" />}
           />
-          <Heading as="h1" size="lg" letterSpacing="tight" ml={3}>
+          <Heading as="h1" size="lg" letterSpacing="tight" ml={2}>
             Quentin Berger
           </Heading>
         </Stack>
