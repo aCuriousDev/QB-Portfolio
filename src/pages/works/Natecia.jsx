@@ -228,9 +228,8 @@ const Natecia = () => {
           <TabList mb="1em">
             <Tab>v0</Tab>
             <Tab>v1</Tab>
-
             <Tab>v5</Tab>
-            <Tab>Schéma</Tab>
+            <Tab>Schéma client</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
