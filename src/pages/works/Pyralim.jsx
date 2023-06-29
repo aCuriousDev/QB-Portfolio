@@ -141,7 +141,8 @@ const Pyralim = () => {
         <Center mt={6}>
           <Button
             as={Link}
-            href={"works"}
+            isExternal
+            href={"https://pyra-alim.netlify.app/"}
             colorScheme="green"
             rightIcon={<VscArrowRight fontSize={"1.1rem"} />}
           >
