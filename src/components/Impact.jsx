@@ -37,4 +37,5 @@ const Impact = ({ children, title, work }) => {
     </Card>
   );
 };
+
 export default Impact;

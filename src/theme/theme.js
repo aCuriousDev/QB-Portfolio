@@ -31,6 +31,12 @@ const components = {
       },
     },
   },
+  Link: {
+    baseStyle: (props) => ({
+      color: mode("blue.500", "teal.400")(props),
+      textUnderlineOffset: 3,
+    }),
+  },
 };
 
 const config = {

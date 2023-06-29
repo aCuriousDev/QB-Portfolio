@@ -1,4 +1,4 @@
-import { Box, Container, Image } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 // import { motion } from "framer-motion";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
@@ -10,7 +10,7 @@ const MainLayout = () => {
     <Box pb={8}>
       <NavBar />
       <Container maxW="container.sm" pt={20}>
-        <MainAnim />      
+        <MainAnim />
         <Outlet />
       </Container>
       <Footer />

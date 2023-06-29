@@ -1,4 +1,4 @@
-import { Container, SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import { WorkGridItem } from "../components/WorkGridItem";
 
 import Layout from "../components/layout/Article";
@@ -38,7 +38,8 @@ export default function Works() {
         </Section>
         <Section delay={0.6}>
           <WorkGridItem id="ASDD" title="ASDD" thumbnail={thumbASDD}>
-            Direction d&apos;une association sportive dynamique et prospère
+            Direction d&apos;une association sportive dynamique et prospère,
+            avec un focus sur la transition numérique
           </WorkGridItem>
         </Section>
       </SimpleGrid>

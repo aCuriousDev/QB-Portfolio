@@ -4,21 +4,12 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 // @ts-ignore
 import livret from "../assets/livret_mat_natecia.pdf";
 import { useState } from "react";
-import {
-  Center,
-  Flex,
-  Icon,
-  Spacer,
-  Stack,
-  Text,
-  Box,
-  Button,
-} from "@chakra-ui/react";
+import { Center, Flex, Icon, Stack, Text, Box } from "@chakra-ui/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
-import { VscTriangleLeft } from "react-icons/vsc";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
+  // @ts-ignore
   import.meta.url
 ).toString();
 

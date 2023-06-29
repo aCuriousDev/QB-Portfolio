@@ -15,11 +15,10 @@ import {
   StatArrow,
   StatGroup,
   Icon,
-  VStack,
   Stack,
 } from "@chakra-ui/react";
 import { PiBracketsCurlyBold } from "react-icons/pi";
-import { VscArrowRight, VscCheck } from "react-icons/vsc";
+import { VscArrowRight } from "react-icons/vsc";
 import { ImCheckmark } from "react-icons/im";
 import profileSrc from "../assets/img/quentin_profile.jpg";
 import Section from "../components/Section";
@@ -56,7 +55,9 @@ export default function Home() {
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2">Quentin Berger</Heading>
-            <Text p={0} m={0} fontSize={"sm"}>Digital Qurious ( Creator / Developer / Designer )</Text>
+            <Text p={0} m={0} fontSize={"sm"}>
+              Digital Qurious ( Creator / Developer / Designer )
+            </Text>
           </Box>
           <Box
             flexShrink={0}
@@ -105,7 +106,6 @@ export default function Home() {
               to={"works"}
               colorScheme="blue"
               rightIcon={<VscArrowRight fontSize={"1.1rem"} />}
-              scroll={"false"}
             >
               Mon portfolio
             </Button>
@@ -220,7 +220,6 @@ export default function Home() {
               to={"works"}
               colorScheme="blue"
               rightIcon={<VscArrowRight fontSize={"1.1rem"} />}
-              scroll={"false"}
             >
               Mon portfolio
             </Button>
