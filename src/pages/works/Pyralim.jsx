@@ -32,6 +32,7 @@ import { FaReact } from "react-icons/fa";
 import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
 import Work from "../../components/Work";
 import { VscArrowRight } from "react-icons/vsc";
+import CollapseElement from "../../components/CollapseElement";
 
 const Pyralim = () => {
   return (
@@ -167,15 +168,17 @@ const Pyralim = () => {
           d&apos;accueil, un tutoriel, une page de résultats, l&apos;envoie des
           résultats vers une base de données et l&apos;authentification.
         </Text>
-
         <Text variant={"section-paragraph"} my={2}>
-          Le choix de React{" "}
-          <Icon
-            as={FaReact}
-            boxSize={4}
-            color="#149ECA"
-            verticalAlign={"middle"}
-          />{" "}
+          Le choix de{" "}
+          <Tag size="md" colorScheme="blue" borderRadius="full" pl={0}>
+            React
+            <Icon
+              as={FaReact}
+              boxSize={4}
+              color="#149ECA"
+              verticalAlign={"middle"}
+            />{" "}
+          </Tag>
           s&apos;impose naturellement étant une framework populaire il dispose
           de nombreuses librairies et d&apos;une documentation complète.
         </Text>
@@ -192,12 +195,41 @@ const Pyralim = () => {
             <ExternalLinkIcon mx={1} boxSize={3} />
           </Link>
         </Stack>
-        <AspectRatio ratio={16 / 9} minH={750}>
-          <iframe
-            src="https://pyra-alim.netlify.app/"
-            style={{ objectFit: "contain", width: "100%", height: "100%" }}
-          />
-        </AspectRatio>
+        <CollapseElement btnText={"Ouvrir / Fermer la démo"}>
+          <AspectRatio ratio={16 / 9} minH={750} mb={2}>
+            <iframe
+              src="https://pyra-alim.netlify.app/"
+              style={{
+                objectFit: "contain",
+                width: "100%",
+                height: "100%",
+                borderRadius: "12px",
+              }}
+            />
+          </AspectRatio>
+          <Center>
+            <Badge colorScheme="teal">iframe de la version actuelle</Badge>
+          </Center>
+        </CollapseElement>
+        <Text variant={"section-paragraph"} my={2}>
+          La version en cours de développement utilise{" "}
+          <Link isExternal href="https://www.framer.com/motion/">
+            Framer-Motion
+          </Link>{" "}
+          pour la gestion des animations et des cartes,{" "}
+          <Link href="https://reactrouter.com/en/main" isExternal>
+            React-Router v6
+          </Link>{" "}
+          pour le routing,{" "}
+          <Link href="https://chakra-ui.com/" isExternal>
+            Chakra UI
+          </Link>{" "}
+          comme component library et les fonctionnalités de{" "}
+          <Link href="https://firebase.google.com/" isExternal>
+            Firebase
+          </Link>{" "}
+          pour le stockage des données et l&apos;authentification.
+        </Text>
       </Section>
 
       <Section>
@@ -221,13 +253,22 @@ const Pyralim = () => {
             https://github.com/aCuriousDev/Pyra-Alim-App
           </Link>
         </Text>
-        <AspectRatio ratio={16 / 9} minH={600}>
-          <iframe
-            src="https://acuriousdev.github.io/Pyra-Alim-App/"
-            style={{ objectFit: "contain", width: "100%", height: "100%" }}
-          />
-        </AspectRatio>
-        <Badge>iframe du premier proto</Badge>
+        <CollapseElement btnText={"Ouvrir / Fermer la démo"}>
+          <AspectRatio ratio={16 / 9} minH={600} mb={1}>
+            <iframe
+              src="https://acuriousdev.github.io/Pyra-Alim-App/"
+              style={{
+                objectFit: "contain",
+                width: "100%",
+                height: "100%",
+                borderRadius: "12px",
+              }}
+            />
+          </AspectRatio>
+          <Center>
+            <Badge colorScheme="teal">iframe du premier proto</Badge>
+          </Center>
+        </CollapseElement>
         <Text variant={"section-paragraph"} mt={2}>
           Le challenge principal fût la gestion des événements
           d&apos;interactions avec les cartes pour lesquels je me résolu à
@@ -305,6 +346,7 @@ const Pyralim = () => {
                       objectFit: "contain",
                       width: "100%",
                       height: "100%",
+                      borderRadius: "12px",
                     }}
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FviYVY3iYPrpFeBSne14FI8%2FAlim'App%3Fpage-id%3D58%253A43%26type%3Ddesign%26node-id%3D58-45%26viewport%3D717%252C562%252C0.09%26t%3DCSmaouSILc09Xeft-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D58%253A45"
                   />
@@ -325,6 +367,7 @@ const Pyralim = () => {
                       objectFit: "contain",
                       width: "100%",
                       height: "100%",
+                      borderRadius: "12px",
                     }}
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FviYVY3iYPrpFeBSne14FI8%2FAlim'App%3Fpage-id%3D58%253A43%26type%3Ddesign%26node-id%3D58-122%26viewport%3D717%252C562%252C0.09%26t%3DCSmaouSILc09Xeft-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D58%253A114"
                   />
