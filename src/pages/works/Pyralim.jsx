@@ -195,7 +195,7 @@ const Pyralim = () => {
             <ExternalLinkIcon mx={1} boxSize={3} />
           </Link>
         </Stack>
-        <CollapseElement btnText={"Ouvrir / Fermer la démo"}>
+        <CollapseElement btnText={"Ouvrir / Fermer la Démo"}>
           <AspectRatio ratio={16 / 9} minH={750} mb={2}>
             <iframe
               src="https://pyra-alim.netlify.app/"
@@ -238,7 +238,7 @@ const Pyralim = () => {
         </Heading>
         <Text variant={"section-paragraph"} mb={2}>
           Ma première approche est d&apos;utiliser les outils que je connais
-          déjà et rester simple :
+          déjà et rester simple :{" "}
           <Tag size="md" colorScheme="yellow" borderRadius="full" pl={0}>
             Javascript
           </Tag>{" "}
@@ -253,7 +253,7 @@ const Pyralim = () => {
             https://github.com/aCuriousDev/Pyra-Alim-App
           </Link>
         </Text>
-        <CollapseElement btnText={"Ouvrir / Fermer la démo"}>
+        <CollapseElement btnText={"Ouvrir / Fermer la Démo"}>
           <AspectRatio ratio={16 / 9} minH={600} mb={1}>
             <iframe
               src="https://acuriousdev.github.io/Pyra-Alim-App/"
@@ -320,62 +320,64 @@ const Pyralim = () => {
           j&apos; pu créer deux premiers prototypes interactifs sous Figma,
           disponibles ci-dessous :
         </Text>
-        <Tabs
-          variant="solid-rounded"
-          colorScheme="twitter"
-          isFitted
-          isLazy={true}
-          lazyBehavior={"keepMounted"}
-        >
-          <TabList>
-            <Tab>v1</Tab>
-            <Tab>v2</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <Box>
-                <Link
-                  href="https://www.figma.com/proto/viYVY3iYPrpFeBSne14FI8/Alim'App?page-id=58%3A43&type=design&node-id=58-45&viewport=717%2C562%2C0.09&t=CSmaouSILc09Xeft-1&scaling=min-zoom&starting-point-node-id=58%3A45&hide-ui=1"
-                  isExternal
-                >
-                  lien vers le proto 01
-                </Link>
-                <AspectRatio ratio={9 / 19.5}>
-                  <iframe
-                    style={{
-                      objectFit: "contain",
-                      width: "100%",
-                      height: "100%",
-                      borderRadius: "12px",
-                    }}
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FviYVY3iYPrpFeBSne14FI8%2FAlim'App%3Fpage-id%3D58%253A43%26type%3Ddesign%26node-id%3D58-45%26viewport%3D717%252C562%252C0.09%26t%3DCSmaouSILc09Xeft-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D58%253A45"
-                  />
-                </AspectRatio>
-              </Box>
-            </TabPanel>
-            <TabPanel>
-              <Box>
-                <Link
-                  href="https://www.figma.com/proto/viYVY3iYPrpFeBSne14FI8/Alim'App?page-id=58%3A43&node-id=58-114&viewport=717%2C562%2C0.09&t=xKJqjmko43OvBOTN-8&scaling=min-zoom&starting-point-node-id=58%3A114&hide-ui=1"
-                  isExternal
-                >
-                  lien vers le proto 02
-                </Link>
-                <AspectRatio ratio={9 / 19.5}>
-                  <iframe
-                    style={{
-                      objectFit: "contain",
-                      width: "100%",
-                      height: "100%",
-                      borderRadius: "12px",
-                    }}
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FviYVY3iYPrpFeBSne14FI8%2FAlim'App%3Fpage-id%3D58%253A43%26type%3Ddesign%26node-id%3D58-122%26viewport%3D717%252C562%252C0.09%26t%3DCSmaouSILc09Xeft-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D58%253A114"
-                  />
-                </AspectRatio>
-              </Box>
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
+        <CollapseElement btnText={"Voir / Cacher les Prototypes "}>
+          <Tabs
+            variant="solid-rounded"
+            colorScheme="twitter"
+            isFitted
+            isLazy={true}
+            lazyBehavior={"keepMounted"}
+          >
+            <TabList>
+              <Tab>v1</Tab>
+              <Tab>v2</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <Box>
+                  <Link
+                    href="https://www.figma.com/proto/viYVY3iYPrpFeBSne14FI8/Alim'App?page-id=58%3A43&type=design&node-id=58-45&viewport=717%2C562%2C0.09&t=CSmaouSILc09Xeft-1&scaling=min-zoom&starting-point-node-id=58%3A45&hide-ui=1"
+                    isExternal
+                  >
+                    lien vers le proto 01
+                  </Link>
+                  <AspectRatio ratio={9 / 19.5}>
+                    <iframe
+                      style={{
+                        objectFit: "contain",
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "12px",
+                      }}
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FviYVY3iYPrpFeBSne14FI8%2FAlim'App%3Fpage-id%3D58%253A43%26type%3Ddesign%26node-id%3D58-45%26viewport%3D717%252C562%252C0.09%26t%3DCSmaouSILc09Xeft-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D58%253A45"
+                    />
+                  </AspectRatio>
+                </Box>
+              </TabPanel>
+              <TabPanel>
+                <Box>
+                  <Link
+                    href="https://www.figma.com/proto/viYVY3iYPrpFeBSne14FI8/Alim'App?page-id=58%3A43&node-id=58-114&viewport=717%2C562%2C0.09&t=xKJqjmko43OvBOTN-8&scaling=min-zoom&starting-point-node-id=58%3A114&hide-ui=1"
+                    isExternal
+                  >
+                    lien vers le proto 02
+                  </Link>
+                  <AspectRatio ratio={9 / 19.5}>
+                    <iframe
+                      style={{
+                        objectFit: "contain",
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "12px",
+                      }}
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FviYVY3iYPrpFeBSne14FI8%2FAlim'App%3Fpage-id%3D58%253A43%26type%3Ddesign%26node-id%3D58-122%26viewport%3D717%252C562%252C0.09%26t%3DCSmaouSILc09Xeft-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D58%253A114"
+                    />
+                  </AspectRatio>
+                </Box>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+        </CollapseElement>
         <Text variant={"section-paragraph"}>
           En plus des prototypes, je réalise une Flowchart de l&apos;application
           ainsi que quelques concepts d&apos;éléments UI :

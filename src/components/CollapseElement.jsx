@@ -6,7 +6,7 @@ function CollapseElement({ children, btnText }) {
   return (
     <>
       <Center my={2}>
-        <Button colorScheme="teal" onClick={onToggle}>
+        <Button colorScheme="blue" onClick={onToggle}>
           {btnText}
         </Button>
       </Center>
