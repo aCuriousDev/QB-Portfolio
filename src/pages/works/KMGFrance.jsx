@@ -63,13 +63,13 @@ const KMGFrance = () => {
         <ListItem>
           <Center justifyContent={"start"}>
             <Meta>Catégorie</Meta>
-            <Text>Création de Contenu</Text>
+            <Text>Création de Contenu, Design Graphique, Web Design</Text>
           </Center>
         </ListItem>
         <ListItem>
           <Center justifyContent={"start"}>
             <Meta>Outils</Meta>
-            <Text>Caméra, Premiere Pro, After Effect, Photoshop</Text>
+            <Text>Caméra, Premiere Pro, After Effect, Photoshop, Figma</Text>
           </Center>
         </ListItem>
       </List>
@@ -260,18 +260,17 @@ const KMGFrance = () => {
             </TabPanel>
           </TabPanels>
         </Tabs>
-        <Text variant={"section-paragraph"}>
+        <Text variant={"section-paragraph"} mb={4}>
           C&apos;est plus d&apos;une centaine de projets qui ont été réalisés
           dans le cadre de cette collaboration, une partie consistant à la
           productions de formations et des visuels les accompagnants
-          consultables directement sur le site :{" "}
-        </Text>
-        <Center>
+          consultables directement sur le site :<br />
           <Link href="https://www.kravmagauniversity.fr/promo" isExternal>
             https://www.kravmagauniversity.fr/
             <ExternalLinkIcon mx={1} boxSize={3} />
           </Link>
-        </Center>
+        </Text>
+
         <WorkImage
           src="/images/works/kmgfrance-formations.png"
           alt="kmgfrance-formations"
