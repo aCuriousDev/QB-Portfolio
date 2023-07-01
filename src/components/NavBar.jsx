@@ -12,10 +12,12 @@ import {
   IconButton,
   useColorModeValue,
   forwardRef,
+  Icon,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeButton from "./theme-button";
 import Logo from "./Logo";
+import { VscGithub, VscGithubAlt } from "react-icons/vsc";
 
 const LinkItem = ({ children, to, ...props }) => {
   const inactiveColor = useColorModeValue("gray.800", "whiteAlpha.900");
@@ -94,7 +96,12 @@ const NavBar = (props) => {
             Home
           </LinkItem>
           <LinkItem to="works">Works</LinkItem>
-          <LinkItem to="ressources">Ressources</LinkItem>
+          <LinkItem to="https://github.com/aCuriousDev/QB-Portfolio" isExternal>
+            <Box display={"flex"} alignItems={"center"}>
+              <Icon as={VscGithub} boxSize={4} mr={1} />
+              Source
+            </Box>
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -114,8 +121,15 @@ const NavBar = (props) => {
                 <MenuItem as={MenuLink} to="works">
                   Works
                 </MenuItem>
-                <MenuItem as={MenuLink} to="ressources">
-                  Ressources
+                <MenuItem
+                  as={MenuLink}
+                  to="https://github.com/aCuriousDev/QB-Portfolio"
+                  isExternal
+                >
+                  <Box display={"flex"} alignItems={"center"}>
+                    <Icon as={VscGithub} boxSize={4} mr={1} />
+                    Source
+                  </Box>
                 </MenuItem>
               </MenuList>
             </Menu>
