@@ -139,7 +139,8 @@ export default function Home() {
                   as={Link}
                   href={"https://pyra-alim.netlify.app/"}
                   isExternal
-                  colorScheme="blue"
+                  bg={"blackAlpha.200"}
+                  color={"gray.900"}
                   variant={"solid"}
                   rightIcon={<VscArrowRight fontSize={"1.1rem"} />}
                 >

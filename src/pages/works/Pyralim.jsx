@@ -1,4 +1,5 @@
 import {
+  Image,
   Center,
   Heading,
   Icon,
@@ -23,6 +24,7 @@ import { WorkImage, Meta, Date } from "../../components/Custom";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Section from "../../components/Section";
 import { FaReact } from "react-icons/fa";
+import { FaGears } from "react-icons/fa6";
 import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
 import Work from "../../components/Work";
 import { VscArrowRight } from "react-icons/vsc";
@@ -231,18 +233,28 @@ const Pyralim = () => {
           pour le stockage des données et l&apos;authentification.
         </Text>
         <Text>
-          La version en cours de développement comprend une Landing Page ainsi
-          qu&apos;une interface complète pour l&apos;utilisateur et
+          Une branche activement en développement comprend une Landing Page
+          ainsi qu&apos;une interface complète pour l&apos;utilisateur et
           l&apos;administrateur une early preview est disponible ici :
         </Text>
-        <Center>
+        
           <Link
             href="https://pyra-alim-app-v2-git-pyra-alim-app-firerouter-acuriousdev.vercel.app/"
             isExternal
           >
-            Early Preview
+            <Center>
+              <Box display={"flex"} alignItems={"center"}>
+                Early Preview
+                <Icon as={FaGears} ml={1} />
+              </Box>
+            </Center>
+            <WorkImage
+              src="/images/works/pyralim_preview01.png"
+              alt="pyralima_preview_01"
+              isDisable
+            />
           </Link>
-        </Center>
+        
       </Section>
 
       <Section>
