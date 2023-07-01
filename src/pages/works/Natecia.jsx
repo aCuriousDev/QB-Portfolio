@@ -185,8 +185,8 @@ const Natecia = () => {
           En parallèle du livret une charte d&apos;accueil et
           d&apos;accompagnement a été produite, disponible en trois langues
           (Français, Anglais, Arabe) elle est affichée dans les services
-          concernés. Sa conception m&apos;a demandé de trouver une traductrice
-          arabe et de s&apos;adapter à l&apos;écriture de droite à gauche.
+          concernés. Sa conception m&apos;a demandé de trouver puis de travailler avec une traductrice
+          arabe - français.
         </Text>
         <Tabs isFitted>
           <TabList mb="1em">
