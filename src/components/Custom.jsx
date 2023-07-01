@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { Badge, Image } from "@chakra-ui/react";
+import { Badge, Center, Image } from "@chakra-ui/react";
 import ImageModal from "./ImageModal";
 
 export const WorkImage = ({ src, alt }) => {
@@ -31,4 +31,8 @@ export const Meta = ({ children }) => (
 );
 
 export const Date = ({ children }) =>
-  children && <Badge colorScheme="gray">{children}</Badge>;
+  children && (
+      <Badge variant="outline" colorScheme="telegram" fontSize=".8em" mt={1} mb={2} px={2}>
+        {children}
+      </Badge>
+  );

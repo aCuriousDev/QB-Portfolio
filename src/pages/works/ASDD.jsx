@@ -10,21 +10,23 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { HiLightningBolt, HiLightBulb, HiStar } from "react-icons/hi";
-import { Meta, WorkImage } from "../../components/Custom";
+import { Date, Meta, WorkImage } from "../../components/Custom";
 import Section from "../../components/Section";
 import Work from "../../components/Work";
 
 const Asdd = () => {
   return (
     <Work>
-      <WorkImage src={"/images/works/thumb_ASDD.jpg"} alt={"thumb_ASDD"}/>
+      <WorkImage src={"/images/works/thumb_ASDD.jpg"} alt={"thumb_ASDD"} />
+      <Date>2019 - </Date>
       <Text variant={"section-paragraph"}>
-        Depuis 2019 je dirige l'ASDD - Krav Maga Décines, association loi 1901,
-        accompagné d'une équipe de bénévoles et du président. J'insuffle ma
-        vision et veille au bon développement du club. Je suis notamment
-        responsable de la transition vers le numérique pour laquelle j'ai mis en
-        place l'ensemble des supports et services. Nous pouvons nous féliciter
-        d'une belle croissance qui se maintient année après année.
+        Depuis 2019 je dirige l&apos;ASDD - Krav Maga Décines, association loi
+        1901, accompagné d&apos;une équipe de bénévoles et du président.
+        J&apos;insuffle ma vision et veille au bon développement du club. Je
+        suis notamment responsable de la transition vers le numérique pour
+        laquelle j&apos;ai mis en place l&apos;ensemble des supports et
+        services. Nous pouvons nous féliciter d&apos;une belle croissance qui se
+        maintient année après année.
       </Text>
       <List ml={4} my={4}>
         <ListItem>

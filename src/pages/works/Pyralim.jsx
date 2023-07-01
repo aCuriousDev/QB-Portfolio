@@ -19,7 +19,7 @@ import {
   Code,
   Stack,
 } from "@chakra-ui/react";
-import { WorkImage, Meta } from "../../components/Custom";
+import { WorkImage, Meta, Date } from "../../components/Custom";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Section from "../../components/Section";
 import { FaReact } from "react-icons/fa";
@@ -35,6 +35,7 @@ const Pyralim = () => {
         src={"/images/works/thumb_pyralim.jpg"}
         alt={"thumb_pyralim"}
       />
+      <Date>2022 - </Date>
       <Text variant={"section-paragraph"}>
         Application permettant de réaliser un bilan alimentaire rapide pour
         prendre conscience de ses habitudes de consommation. Simple et ludique

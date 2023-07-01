@@ -20,7 +20,7 @@ import {
   Tag,
   Text,
 } from "@chakra-ui/react";
-import { WorkImage, Meta } from "../../components/Custom";
+import { WorkImage, Meta, Date } from "../../components/Custom";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Section from "../../components/Section";
 import { ImCheckmark } from "react-icons/im";
@@ -33,6 +33,7 @@ const Natecia = () => {
         src={"/images/works/thumb_natecia.jpg"}
         alt={"thumb_natecia"}
       />
+      <Date>2019 - 2023</Date>
       <Text variant={"section-paragraph"}>
         Dans l&apos;objectif d&apos;obtenir le{" "}
         <Link href="https://www.i-hab.fr/" isExternal>
