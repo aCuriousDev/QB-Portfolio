@@ -1,9 +1,5 @@
 import "./App.css";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useLocation,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./components/layout/MainLayout";
 
 // Pages for routing
@@ -13,7 +9,6 @@ import Works from "./pages/Works";
 // import Work from "./components/Work";
 import { Pyralim, Natecia, KMGFrance, Asdd } from "./pages/works/worksIndex";
 import { AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {

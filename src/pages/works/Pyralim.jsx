@@ -22,7 +22,6 @@ import {
 import { WorkImage, Meta } from "../../components/Custom";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Section from "../../components/Section";
-import { ImCheckmark } from "react-icons/im";
 import { FaReact } from "react-icons/fa";
 import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
 import Work from "../../components/Work";

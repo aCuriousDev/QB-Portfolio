@@ -1,0 +1,48 @@
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  useDisclosure,
+  Box,
+} from "@chakra-ui/react";
+
+function ImageModal({ children, title }) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  return (
+    <>
+      <Box onClick={onOpen} cursor={"pointer"}>
+        {children}
+      </Box>
+
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        size={"xl"}
+        scrollBehavior="outside"
+      >
+        <ModalOverlay backdropFilter="blur(10px) grayscale(80%)" />
+        <ModalContent p={0} m={0} bg={"none"}>
+          <ModalHeader
+            p={2}
+            bg={"blackAlpha.100"}
+            color={"gray.100"}
+            borderRadius="lg"
+          >
+            {title}
+          </ModalHeader>
+          <ModalCloseButton color={"white"} bg={"blackAlpha.600"} boxSize={8} />
+          <ModalBody p={0} m={0} bg={"blackAlpha.100"} borderRadius="lg">
+            {children}
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+}
+
+export default ImageModal;

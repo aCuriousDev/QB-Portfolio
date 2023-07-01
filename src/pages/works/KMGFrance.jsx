@@ -201,12 +201,11 @@ const KMGFrance = () => {
             Vidéo de la chaîne totalisant 600k + vues
           </Text>
         </Center>
-        <Link href="/images/works/kmgfrance-statsYT.png" isExternal>
-          <WorkImage
-            src="/images/works/kmgfrance-statsYT.png"
-            alt="kmgfrance-statsYT"
-          />
-        </Link>
+        <WorkImage
+          src="/images/works/kmgfrance-statsYT.png"
+          alt="kmgfrance-statsYT"
+        />
+
         <Center>
           <Text
             textAlign={"center"}
