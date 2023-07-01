@@ -47,7 +47,7 @@ const Asdd = () => {
       <Date>2019 - </Date>
       <Text variant={"section-paragraph"}>
         Depuis 2019 je dirige l&apos;ASDD - Krav Maga Décines, association loi
-        1901, accompagné d&apos;une équipe de bénévoles et du président.
+        1901, accompagné du bureau et d&apos;une équipe de bénévoles.
         J&apos;insuffle ma vision et veille au bon développement du club. Je
         suis notamment responsable de la transition vers le numérique pour
         laquelle j&apos;ai mis en place l&apos;ensemble des supports et
