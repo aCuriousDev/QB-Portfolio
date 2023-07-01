@@ -24,7 +24,12 @@ function ImageModal({ children, title }) {
         scrollBehavior="outside"
       >
         <ModalOverlay backdropFilter="blur(10px) grayscale(80%)" />
-        <ModalContent p={0} m={2} bg={"none"}>
+        <ModalContent
+          p={0}
+          m={2}
+          bg={"none"}
+          maxW={["minContent", "80vw", "800px"]}
+        >
           <ModalHeader
             p={2}
             bg={"blackAlpha.100"}
