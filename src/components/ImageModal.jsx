@@ -20,11 +20,11 @@ function ImageModal({ children, title }) {
       <Modal
         isOpen={isOpen}
         onClose={onClose}
-        size={"xl"}
+        size={"min"}
         scrollBehavior="outside"
       >
         <ModalOverlay backdropFilter="blur(10px) grayscale(80%)" />
-        <ModalContent p={0} m={0} bg={"none"}>
+        <ModalContent p={0} m={2} bg={"none"}>
           <ModalHeader
             p={2}
             bg={"blackAlpha.100"}

@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
+import { accordionTheme } from "./accordionTheme";
 
 const styles = {
   global: (props) => ({
@@ -20,6 +21,11 @@ const components = {
         textDecorationThickness: 2,
         marginTop: 3,
         marginBottom: 4,
+      },
+      "section-subtitle": {
+        fontSize: "xl",
+        marginTop: 2,
+        marginBottom: 2,
       },
     },
   },
@@ -44,5 +50,9 @@ const config = {
   useSystemColorMode: true,
 };
 
-const theme = extendTheme({ config, styles, components });
+const theme = extendTheme({
+  config,
+  styles,
+  components: { Accordion: accordionTheme, ...components },
+});
 export default theme;

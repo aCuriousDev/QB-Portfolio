@@ -181,7 +181,7 @@ export default function Home() {
               <StatGroup>
                 <Stat>
                   <StatLabel>Nombre d&apos;inscrits</StatLabel>
-                  <StatNumber color="green.400">200</StatNumber>
+                  <StatNumber color="green.400">200+</StatNumber>
                   <StatHelpText>
                     <StatArrow type="increase" />
                     +80% vs pre-Covid
