@@ -6,13 +6,15 @@ import Section from "../components/Section";
 // img thumb import
 
 import thumbPyralim from "/images/works/thumb_pyralim.jpg";
-import thumbNatecia from "/images/works/natecia_copil-IHAB_thumb.jpg";
+import thumbNatecia from "/images/works/thumb_natecia.jpg";
 import thumbKMG from "/images/works/thumb_KMG.jpg";
 import thumbASDD from "/images/works/thumb_ASDD.jpg";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Works() {
   return (
     <Layout>
+      <ScrollToTop />
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem id="Pyralim" title="Pyralim" thumbnail={thumbPyralim}>

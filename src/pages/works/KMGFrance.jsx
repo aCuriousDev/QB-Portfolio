@@ -23,7 +23,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { WorkImage, Meta } from "../../components/Custom";
+import { WorkImage, Meta, Date } from "../../components/Custom";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Section from "../../components/Section";
 import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
@@ -31,6 +31,8 @@ import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
 const KMGFrance = () => {
   return (
     <Work>
+      <WorkImage src={"/images/works/thumb_KMG.jpg"} alt={"thumb_KMG"} />
+      <Date>2019 -{""}</Date>
       <Text variant={"section-paragraph"}>
         Afin d&apos;atteindre une nouvelle cible Emmanuel Ayache, directeur de
         Krav Maga Global France (KMG France) à développer une stratégie de
@@ -39,6 +41,12 @@ const KMGFrance = () => {
         riche et variée.
       </Text>
       <List ml={4} my={4}>
+        <ListItem>
+          <Center justifyContent={"start"}>
+            <Meta>Date</Meta>
+            2019 - Maintenant
+          </Center>
+        </ListItem>
         <ListItem>
           <Center justifyContent={"start"}>
             <Meta>YouTube</Meta>
@@ -51,6 +59,7 @@ const KMGFrance = () => {
             </Link>
           </Center>
         </ListItem>
+
         <ListItem>
           <Center justifyContent={"start"}>
             <Meta>Website</Meta>

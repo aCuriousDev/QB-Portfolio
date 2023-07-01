@@ -29,6 +29,10 @@ import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
 const Natecia = () => {
   return (
     <Work>
+      <WorkImage
+        src={"/images/works/thumb_natecia.jpg"}
+        alt={"thumb_natecia"}
+      />
       <Text variant={"section-paragraph"}>
         Dans l&apos;objectif d&apos;obtenir le{" "}
         <Link href="https://www.i-hab.fr/" isExternal>

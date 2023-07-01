@@ -5,7 +5,7 @@ import { Container } from "@chakra-ui/react";
 const variants = {
   hidden: { opacity: 0, x: 0, y: 40 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: -0, y: 40 },
+  exit: { opacity: 0, x: 0, y: 40 },
 };
 
 const Layout = ({ children }) => {
@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         animate="enter"
         exit="exit"
         variants={variants}
-        transition={{ duration: 0.8, type: "spring" }}
+        transition={{ duration: 0.6, type: "easeInOut" }}
         style={{ position: "relative" }}
       >
         {children}

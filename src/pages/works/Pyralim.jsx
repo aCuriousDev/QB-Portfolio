@@ -5,11 +5,6 @@ import {
   Link,
   List,
   ListItem,
-  Stat,
-  StatGroup,
-  StatHelpText,
-  StatLabel,
-  StatNumber,
   Tab,
   TabList,
   TabPanel,
@@ -37,6 +32,10 @@ import CollapseElement from "../../components/CollapseElement";
 const Pyralim = () => {
   return (
     <Work>
+      <WorkImage
+        src={"/images/works/thumb_pyralim.jpg"}
+        alt={"thumb_pyralim"}
+      />
       <Text variant={"section-paragraph"}>
         Application permettant de réaliser un bilan alimentaire rapide pour
         prendre conscience de ses habitudes de consommation. Simple et ludique
@@ -126,8 +125,8 @@ const Pyralim = () => {
                 <Icon as={HiStar} mr={1} boxSize={4} />
                 Points Forts
               </Tag>
-              Projet Utile / Opportunité d&apos;Apprentissage / Contraintes
-              Réelles / Liberté Technologique
+              Projet Impactant / Secteur Santé, Bien-être / Opportunité
+              d&apos;Apprentissage / Contraintes Réelles / Liberté Technologique
             </Text>
           </ListItem>
         </List>
@@ -153,7 +152,7 @@ const Pyralim = () => {
             colorScheme="green"
             rightIcon={<VscArrowRight fontSize={"1.1rem"} />}
           >
-            Tester la démo
+            Tester l&apos;appli
           </Button>
         </Center>
       </Section>
@@ -287,13 +286,13 @@ const Pyralim = () => {
           <TabPanels>
             <TabPanel>
               <WorkImage
-                src={"/images/code/pyralim_onTap.png"}
+                src={"/images/works/pyralim_onTap.png"}
                 alt={"code pyralim_onTap"}
               />
             </TabPanel>
             <TabPanel>
               <WorkImage
-                src={"/images/code/pyralim_onPan.png"}
+                src={"/images/works/pyralim_onPan.png"}
                 alt={"code pyralim_onTap"}
               />
             </TabPanel>

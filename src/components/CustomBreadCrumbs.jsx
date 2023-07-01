@@ -36,6 +36,7 @@ const CustomBreadCrumbs = () => {
   return (
     <UiLayout>
       <Breadcrumb
+        mb={2}
         separator={<ChevronRightIcon color="gray.500" />}
         css={{ textTransform: "capitalize" }}
       >
