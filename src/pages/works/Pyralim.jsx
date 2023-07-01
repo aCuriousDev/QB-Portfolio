@@ -34,6 +34,7 @@ const Pyralim = () => {
       <WorkImage
         src={"/images/works/thumb_pyralim.jpg"}
         alt={"thumb_pyralim"}
+        isDisable
       />
       <Date>2022 - </Date>
       <Text variant={"section-paragraph"}>
@@ -136,9 +137,9 @@ const Pyralim = () => {
           Principe
         </Heading>
         <Text variant={"section-paragraph"} mb={2}>
-          L&apos;appli Pyralim a été conçu pour éveiller sa conscience
+          L&apos;appli Pyralim est conçue pour éveiller sa conscience
           alimentaire en proposant à l&apos;utilisateur de faire le tri dans son
-          alimentation.
+          alimentation de manière ludique.
           <br /> Chaque catégorie d&apos;aliments est représentée par une carte
           que l&apos;on peut manipuler pour la faire glisser dans la direction
           correspondant à la fréquence de consommation, façon Tinder. Pour
@@ -161,7 +162,7 @@ const Pyralim = () => {
           Version actuelle
         </Heading>
         <Text variant={"section-paragraph"} my={2}>
-          Le prototype fût approuvé par toute l&apos;équipe il était temps de
+          Le prototype approuvé par toute l&apos;équipe il était temps de
           développer une nouvelle version plus robuste et capable
           d&apos;intégrer des fonctionnalités supplémentaires comme une page
           d&apos;accueil, un tutoriel, une page de résultats, l&apos;envoie des
@@ -229,6 +230,19 @@ const Pyralim = () => {
           </Link>{" "}
           pour le stockage des données et l&apos;authentification.
         </Text>
+        <Text>
+          La version en cours de développement comprend une Landing Page ainsi
+          qu&apos;une interface complète pour l&apos;utilisateur et
+          l&apos;administrateur une early preview est disponible ici :
+        </Text>
+        <Center>
+          <Link
+            href="https://pyra-alim-app-v2-git-pyra-alim-app-firerouter-acuriousdev.vercel.app/"
+            isExternal
+          >
+            Early Preview
+          </Link>
+        </Center>
       </Section>
 
       <Section>

@@ -30,6 +30,7 @@ const Natecia = () => {
   return (
     <Work>
       <WorkImage
+      isDisable
         src={"/images/works/thumb_natecia.jpg"}
         alt={"thumb_natecia"}
       />

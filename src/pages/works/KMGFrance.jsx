@@ -31,8 +31,12 @@ import { HiLightBulb, HiLightningBolt, HiStar } from "react-icons/hi";
 const KMGFrance = () => {
   return (
     <Work>
-      <WorkImage src={"/images/works/thumb_KMG.jpg"} alt={"thumb_KMG"} />
-      <Date>2019 - </Date>
+      <WorkImage
+        isDisable
+        src={"/images/works/thumb_KMG.jpg"}
+        alt={"thumb_KMG"}
+      />
+      <Date>2019 - 2023</Date>
       <Text variant={"section-paragraph"}>
         Afin d&apos;atteindre une nouvelle cible Emmanuel Ayache, directeur de
         Krav Maga Global France (KMG France) à développer une stratégie de

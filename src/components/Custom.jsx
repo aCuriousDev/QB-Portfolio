@@ -3,12 +3,12 @@ import { useInView } from "framer-motion";
 import { Badge, Center, Image } from "@chakra-ui/react";
 import ImageModal from "./ImageModal";
 
-export const WorkImage = ({ src, alt }) => {
+export const WorkImage = ({ src, alt, isDisable }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
-    <ImageModal title={alt}>
+    <ImageModal title={alt} isDisable={isDisable}>
       <Image
         ref={ref}
         borderRadius="lg"
@@ -32,7 +32,14 @@ export const Meta = ({ children }) => (
 
 export const Date = ({ children }) =>
   children && (
-      <Badge variant="outline" colorScheme="telegram" fontSize=".8em" mt={1} mb={2} px={2}>
-        {children}
-      </Badge>
+    <Badge
+      variant="outline"
+      colorScheme="telegram"
+      fontSize=".8em"
+      mt={1}
+      mb={2}
+      px={2}
+    >
+      {children}
+    </Badge>
   );

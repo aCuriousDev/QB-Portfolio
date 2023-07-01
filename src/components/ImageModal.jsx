@@ -9,9 +9,9 @@ import {
   Box,
 } from "@chakra-ui/react";
 
-function ImageModal({ children, title }) {
+function ImageModal({ children, title, isDisable }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  return (
+  return !isDisable ? (
     <>
       <Box onClick={onOpen} cursor={"pointer"}>
         {children}
@@ -45,6 +45,8 @@ function ImageModal({ children, title }) {
         </ModalContent>
       </Modal>
     </>
+  ) : (
+    <>{children}</>
   );
 }
 

@@ -16,6 +16,8 @@ import {
   StatGroup,
   Icon,
   Stack,
+  Image,
+  Link,
 } from "@chakra-ui/react";
 import { PiBracketsCurlyBold } from "react-icons/pi";
 import { VscArrowRight } from "react-icons/vsc";
@@ -25,6 +27,8 @@ import Section from "../components/Section";
 import { NavLink } from "react-router-dom";
 import Layout from "../components/layout/Article";
 import Impact from "../components/Impact";
+import { Meta, WorkImage } from "../components/Custom";
+import { QuestionIcon } from "@chakra-ui/icons";
 
 export default function Home() {
   return (
@@ -111,6 +115,61 @@ export default function Home() {
             </Button>
           </Center>
         </Section>
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            Actu
+          </Heading>
+          <Stack>
+            <Text variant={"section-paragraph"}>
+              Développeur et designer de l&apos;application web{" "}
+              <Link href="https://pyra-alim.netlify.app/">Pyralim</Link> en
+              collaboration avec le groupe{" "}
+              <Link href="https://naceol.co/">Naceol</Link>.
+            </Text>
+            <Box position={"relative"} shadow={"md"} borderRadius={"lg"}>
+              <Center>
+                <WorkImage
+                  isDisable
+                  src={"/images/works/thumb_pyralim.jpg"}
+                  alt={"thumb_pyralim"}
+                />
+                <Button
+                  position={"absolute"}
+                  bottom={"5%"}
+                  as={Link}
+                  href={"https://pyra-alim.netlify.app/"}
+                  isExternal
+                  colorScheme="blue"
+                  variant={"solid"}
+                  rightIcon={<VscArrowRight fontSize={"1.1rem"} />}
+                >
+                  Tester la Démo
+                </Button>
+              </Center>
+            </Box>
+            <Box>
+              <Meta>React</Meta>
+              <Meta>FireBase</Meta>
+              <Meta>Framer-motion</Meta>
+              <Meta>React-router</Meta>
+              <Meta>CHAKRA UI</Meta>
+              <Meta>NETLIFY</Meta>
+              <Meta>VERCEL</Meta>
+              <Meta>JS</Meta>
+              <Meta>HTML5</Meta>
+              <Meta>CSS3</Meta>
+            </Box>
+            <Text>
+              L&apos;appli Pyralim est conçue pour éveiller sa conscience
+              alimentaire en proposant à l&apos;utilisateur de faire le tri dans
+              son alimentation de manière ludique !
+            </Text>
+            <Link as={NavLink} to={"works/pyralim"} verticalAlign={"middle"}>
+              En savoir plus sur le développement de Pyralim <QuestionIcon />
+            </Link>
+          </Stack>
+        </Section>
+
         <Section delay={0.6}>
           <Heading as="h3" variant="section-title">
             Impact

@@ -39,7 +39,11 @@ import { PiTarget, PiTargetBold } from "react-icons/pi";
 const Asdd = () => {
   return (
     <Work>
-      <WorkImage src={"/images/works/thumb_ASDD.jpg"} alt={"thumb_ASDD"} />
+      <WorkImage
+        isDisable
+        src={"/images/works/thumb_ASDD.jpg"}
+        alt={"thumb_ASDD"}
+      />
       <Date>2019 - </Date>
       <Text variant={"section-paragraph"}>
         Depuis 2019 je dirige l&apos;ASDD - Krav Maga Décines, association loi
