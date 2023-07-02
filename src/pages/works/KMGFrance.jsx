@@ -39,7 +39,7 @@ const KMGFrance = () => {
       <Date>2019 - 2023</Date>
       <Text variant={"section-paragraph"}>
         Afin d&apos;atteindre une nouvelle cible Emmanuel Ayache, directeur de
-        Krav Maga Global France (KMG France) à développer une stratégie de
+        Krav Maga Global France (KMG France) a développé une stratégie de
         contenu sur YouTube et d&apos;autres réseaux sociaux. Ensemble nous
         avons déployé et peaufiné sa vision au travers d&apos;une collaboration
         riche et variée.
@@ -177,9 +177,9 @@ const KMGFrance = () => {
           Avec un objectif initial de 3 vidéos / semaine, ce rythme de parution
           permis à la chaîne de rapidement multiplier le nombre de viewers.
           Travaillant à la fois en amont pour capter et produire vidéos,
-          miniatures et description et en aval pour collecter analyser les
+          miniatures et descriptions et en aval pour collecter analyser les
           performances de chacune d&apos;entre elles et ainsi optimiser la
-          prochaine série de publication.
+          prochaine série de publications.
         </Text>
         <AspectRatio
           ratio={16 / 9}
@@ -220,7 +220,7 @@ const KMGFrance = () => {
           permis d&apos;atteindre les chiffres présentés dans &quot;Impact&quot;
           ci-dessus. Réutilisant et adaptant le contenu créer à d&apos;autres
           plateformes a également été positif avec des vidéos générant
-          jusqu&apos;à 1M de vues sur Facebook notamment.
+          jusqu&apos;à 1M de vues sur Facebook par exemple.
         </Text>
       </Section>
       <Section delay={0.8}>

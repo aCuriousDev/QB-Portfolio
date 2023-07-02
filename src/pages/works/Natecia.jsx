@@ -30,7 +30,7 @@ const Natecia = () => {
   return (
     <Work>
       <WorkImage
-      isDisable
+        isDisable
         src={"/images/works/thumb_natecia.jpg"}
         alt={"thumb_natecia"}
       />
@@ -44,9 +44,9 @@ const Natecia = () => {
         de l&apos;OMS et de l&apos;UNICEF, qui symbolise l&apos;engagement des
         professionnels de santé pour offrir une naissance respectueuse, sûre et
         bienveillante. J&apos;ai collaboré avec l&apos;équipe pilote de
-        l&apos;hôpital privé Natecia créé une série de ressources et supports
-        graphiques destinés à informer, accompagner et rassurer les parents
-        durant cette étape cruciale de leur vie.
+        l&apos;hôpital privé Natecia pour créer une série de ressources et
+        supports graphiques destinés à informer, accompagner et rassurer les
+        parents durant cette étape cruciale de leur vie.
       </Text>
       <List ml={4} my={4}>
         <ListItem>
@@ -185,8 +185,8 @@ const Natecia = () => {
           En parallèle du livret une charte d&apos;accueil et
           d&apos;accompagnement a été produite, disponible en trois langues
           (Français, Anglais, Arabe) elle est affichée dans les services
-          concernés. Sa conception m&apos;a demandé de trouver puis de travailler avec une traductrice
-          arabe - français.
+          concernés. Sa conception m&apos;a demandé de trouver puis de
+          travailler avec une traductrice arabe - français.
         </Text>
         <Tabs isFitted>
           <TabList mb="1em">

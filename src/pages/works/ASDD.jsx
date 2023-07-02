@@ -152,8 +152,8 @@ const Asdd = () => {
                 Découverte
               </Tag>
               Créer une vision et développer les stratégies pour s&apos;y
-              diriger, Manager une équipe, Gérer une base clients de plus de
-              200+ personnes
+              diriger, Manager une équipe, Gérer une base clients de 200+
+              personnes
             </Text>
           </ListItem>
           <ListItem>

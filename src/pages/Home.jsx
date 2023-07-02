@@ -98,7 +98,7 @@ export default function Home() {
             m&apos;inspirent. Développeur, designer et créateur de contenu je
             m&apos;adapte à une variété de contextes et de défis pour proposer
             des solutions impactantes. Chaque collaboration est une nouvelle
-            opportunité pour apprendre et developper de nouvelles compétences.
+            opportunité pour apprendre et développer de nouvelles compétences.
             <br />
             Lorsque je ne suis pas derrière un écran je partage avec
             enthousiasme mon engouement pour le sport au sein de
@@ -150,6 +150,7 @@ export default function Home() {
             </Box>
             <Box>
               <Meta>React</Meta>
+              <Meta>VITE</Meta>
               <Meta>FireBase</Meta>
               <Meta>Framer-motion</Meta>
               <Meta>React-router</Meta>
